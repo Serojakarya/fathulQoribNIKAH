@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum Nikah</a></li>
+    <li><a href="2.html">2. Syarat Nikah</a></li>
+    <li><a href="3.html">3. Wanita Mahram yang Haram Dinikah</a></li>
+	<li><a href="4.html">4. Mas Kawin</a></li>
+	<li><a href="5.html">5. Menggilir Istri dan Nusuz</a></li>
+	<li><a href="6.html">6. Walimah atau Resepsi</a></li>
+	<li><a href="7.html">7. Hukum Khuluk</a></li>
+	<li><a href="8.html">8. Hukum Talak</a></li>
+	<li><a href="9.html">9. Talak Tanjiz dan Talak Ta'liq</a></li>
+	<li><a href="10.html">10. Hukum Rujuk</a></li>
+	<li><a href="11.html">11. Pasal Hukum Ila'</a></li>
+	<li><a href="12.html">12. Pasal Hukum Zhihar</a></li>
+	<li><a href="13.html">13. Pasal Hukum Qadzaf dan Li'an</a></li>
+	<li><a href="14.html">14. Pasal Hukum Iddah</a></li>
+	<li><a href="15.html">15. Pasal Jenis Wanita Iddah dan Hukumnya</a></li>
+	<li><a href="16.html">16. Istibrak (Iddah bagi Budak)</a></li>
+	<li><a href="17.html">17. Hukum Radha (Kerabat Sesusuan)</a></li>
+	<li><a href="18.html">18. Pasal Hukum Menafkahi Kerabat</a></li>
+	<li><a href="19.html">19. Pasal Hukum Hadonah (Pengasuhan Anak)</a></li>
+
+</ul>
+
+</div>
+<h1>Pasal Hukum Hadonah</h1><br/><br/>
+
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+فصل: في أحكام الحضانة وهي لغة مأخوذة من الحضن بكسر الحاء، وهو الجنب لضم الحاضنة الطفل إليه وشرعاً حفظ من لا يستقل بأمر نفسه عما يؤذيه لعدم تمييزه كطفل وكبير مجنون
+<br/><br/>
+وإذا فارق الرجل زوجته وله منها ولد فهي أحق بحضانته- أي تنميته بما يصلحه بتعهده بطعامه وشرابه، وغسل بدنه وثوبه وتمريضه وغير ذلك من مصالحه. ومؤنة الحضانة على من عليه نفقة الطفل، وإذا امتنعت الزوجة من حضانة ولدها انتقلت الحضانة لأمهاتها، وتستمر حضانة الزوجة (إلى) مضي (سبع سنين) وعبر بها المصنف، لأن التمييز يقع فيها غالباً، لكن المدار إنما هو على التمييز سواء حصل قبل سبع سنين أو بعدها (ثم) بعدها (يخير) المميز (بين أبويه فأيهما اختار سلم إليه) فإن كان في أحد الأبوين نقص كجنون، فالحق للآخر ما دام النقص قائماً به، وإذا لم يكن الأب موجوداً خير الولد بين الجد والأم، وكذا يقع التخيير بين الأم ومن على حاشية النسب كأخ وعم (وشرائط الحضانة سبع)
+<br/><br/>
+أحدها (العقل) فلا حضانة لمجنونة أطبق جنونها، أو تقطع، فإن قل جنونها كيوم في سنة لم يبطل حق الحضانة بذلك.
+<br/><br/>
+و الثاني (الحرية) فلا حضانة لرقيقة وإن أذن لها سيدها في الحضانة (و) الثالث (الدين) فلا حضانة لكافرة على مسلم (و) الرابع والخامس (العفة والأمانة) فلا حضانة لفاسقة، ولا يشترط في الحضانة تحقق العدالة الباطنة بل تكفي العدالة الظاهرة
+<br/><br/>
+و السادس (الإقامة) في بلد المميز بأن يكون أبواه مقيمين في بلد واحد، فلو أراد أحدهما سفر حاجة كحج وتجارة طويلاً كان السفر أو قصيراً كان الولد المميز وغيره مع المقيم من الأبوين حتى يعود المسافر منهما. ولو أراد أحد الأبوين سفر نقله فالأب أولى من الأم بحضانته فينزعه منها
+<br/><br/>
+و الشرط السابع (الخلو) أي خلو أم المميز (من زوج) ليس من محارم الطفل فإن نكحت شخصاً من محارمه كعم الطفل أو ابن عمه، أو ابن أخيه ورضي كل منهم بالمميز، فلا تسقط حضانتها بذلك (فإن اختل شرط منها) أي السبعة في الأم (سقطت) حضانتها كما تقدم شرحه مفصلاً.
+
+</font></div>
+
+<hr/><br/>
+
+
+
+
+
+<b><center>Pengertian Hadonah (Pengasuhan Anak)</b></center>
+
+<p>Secara bahasa, hadlanah diambil dari lafadz “al hadln” dengan terbaca kasrah huruf ha’nya, yaitu bermakna lambung. Karena ibu yang merawat anak kecil akan menempelkan anak tersebut ke lambung sang ibu.</p>
+
+<p>Dan secara syara’ adalah menjaga anak yang belum bisa mengurusi dirinya sendiri dari hal-hal yang bisa menyakitinya karena belum tamyiz seperti anak kecil dan orang dewasa yang gila.</p>
+
+<p>Ketika seorang lelaki bercerai dengan istrinya dan ia memiliki anak dari istri tersebut, maka sang istri lebih berhak untuk merawat sang anak.</p>
+
+<p>Maksudnya merawat sang anak dengan sesuatu yang positif padanya dengan mengurusi makanan, minuman, memandikan, mencuci pakaian, merawatnya saat sakit dan hal-hal positif yang lain bagi sang anak.</p><br/>
+
+<b><center>Biaya Asuh</b></center>
+
+<p>Biaya hadlanah ditanggung oleh orang yang wajib menafkahi anak tersebut.</p>
+
+<p>Ketika sang istri enggan merawat anaknya, maka hak asuh berpindah pada ibu sang istri.</p><br/>
+
+<b><center>Masa Asuh</b></center>
+
+<p>Hak asuh sang istri terus berlangsung hingga melewati usia tujuh tahun.</p>
+
+<p>Mushannif mengungkapkan tujuh tahun karena sesungguhnya tamyiz biasanya sudah wujud pada usia tersebut, akan tetapi intinya adalah hingga tamyiz, baik wujudnya sebelum tujuh tahun atau setelahnya.</p>
+
+<p>Kemudian setelah itu, bocah yang sudah tamyiz tersebut disuruh memilih di antara kedua orang tuanya. Mana yang dia pilih, maka sang anak diserahkan padanya.</p>
+
+<p>Lalu, jika salah satu dari kedua orang tuanya memiliki kekurangan seperti gila, maka sang anak diserahkan pada orang tua yang satunya selama sifat kurang tersebut masih ada pada orang tua yang satu itu.</p>
+
+<p>Jika ayahnya sudah tidak ada, maka sang anak disuruh memilih di antara kakek dan ibunya.</p>
+
+<p>Begitu juga sang anak disuruh memilih di antara ibu dan orang-orang yang masih memiliki hubungan nasab dari jalur samping seperti saudara atau paman dari ayah.</p><br/>
+
+<b><center>Syarat-Syarat Hadlanah</b></center>
+
+<p>Syarat-syarat hadlanah ada tujuh :</p>
+
+<p><b><i>Pertama,</i></b> adalah berakal. Sehingga tidak ada hak asuh bagi orang gila, baik gilanya terus menerus atau terputus-putus.</p>
+
+<p>Lalu, jika gilanya sang istri hanya sebentar seperti sehari dalam satu tahun, maka hak asuhnya tidak batal sebab penyakit tersebut.</p>
+
+<p><b><i>Kedua</b></i> adalah merdeka. Sehingga tidak hak asuh bagi seorang budak wanita walaupun majikannya memberi izin padanya untuk mengasuh.</p>
+
+<p><b><i>Ketiga</b></i> adalah agama. Sehingga tidak ada hak asuh bagi wanita kafir atas anak yang beragama islam.</p>
+
+<p><b><i>Keempat</b></i> adalah ‘iffah (terhormat).</p>
+
+<p><b><i>Kelima,</b></i> amanah. Sehingga tidak ada hak asuh bagi wanita fasiq.</p>
+
+<p>Di dalam hak asuh, sifat adil yang bathin tidak disyaratkan harus nampak nyata, bahkan sudah cukup dengan sifat adil yang dhohir saja.</p>
+
+<p><b><i>Keenam</b></i> adalah bermuqim di daerah sang anak. Dengan artian kedua orang tuanya muqim di satu daerah.</p>
+
+<p>Sehingga, seandainya salah satu dari keduanya ingin bepergian karena ada hajat seperti haji dan berdagang, baik jarak perjalanannya jauh atau dekat, maka anak yang sudah tamyiz atau belum diserahkan kepada orang yang muqim dari kedua orang tuanya hingga yang sedang bepergian telah kembali.</p>
+
+<p>Seandainya salah satu dari kedua orang tuanya ingin pindah daerah, maka sang ayah lebih berhak daripada sang ibu untuk mengasuh, sehingga sang anak diambil oleh sang ayah dari tangan sang ibu.</p>
+
+<p><b><i>Ketujuh</b></i> adalah sepi, maksudnya sepinya ibu sang anak yang tamyiz dari seorang suami yang bukan termassuk dari mahramnya sang anak.</p>
+
+<p>Sehingga, jika sang ibu menikah dengan seorang lelaki dari mahramnya sang bocah seperti paman, anak laki-laki paman, atau anak laki-laki saudara laki-laki sang bocah, dan masing-masing dari mereka rela dengan sang bocah, maka hak asuh ibunya tidak bisa gugur sebab pernikahan.</p>
+
+<p>Jika salah satu tujuh syarat tersebut tidak terpenuhi oleh sang ibu, maka hak asuhnya menjadi gugur sebagaimana penjelasan yang telah diperinci.</p>
+
+
+
+
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="18.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 19</font>
+	</a>
+	
+	<a href="">
+    
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

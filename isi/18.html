@@ -1,0 +1,586 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum Nikah</a></li>
+    <li><a href="2.html">2. Syarat Nikah</a></li>
+    <li><a href="3.html">3. Wanita Mahram yang Haram Dinikah</a></li>
+	<li><a href="4.html">4. Mas Kawin</a></li>
+	<li><a href="5.html">5. Menggilir Istri dan Nusuz</a></li>
+	<li><a href="6.html">6. Walimah atau Resepsi</a></li>
+	<li><a href="7.html">7. Hukum Khuluk</a></li>
+	<li><a href="8.html">8. Hukum Talak</a></li>
+	<li><a href="9.html">9. Talak Tanjiz dan Talak Ta'liq</a></li>
+	<li><a href="10.html">10. Hukum Rujuk</a></li>
+	<li><a href="11.html">11. Pasal Hukum Ila'</a></li>
+	<li><a href="12.html">12. Pasal Hukum Zhihar</a></li>
+	<li><a href="13.html">13. Pasal Hukum Qadzaf dan Li'an</a></li>
+	<li><a href="14.html">14. Pasal Hukum Iddah</a></li>
+	<li><a href="15.html">15. Pasal Jenis Wanita Iddah dan Hukumnya</a></li>
+	<li><a href="16.html">16. Istibrak (Iddah bagi Budak)</a></li>
+	<li><a href="17.html">17. Hukum Radha (Kerabat Sesusuan)</a></li>
+	<li><a href="18.html">18. Pasal Hukum Menafkahi Kerabat</a></li>
+	<li><a href="19.html">19. Pasal Hukum Hadonah (Pengasuhan Anak)</a></li>
+
+</ul>
+
+</div>
+<h1>Pasal Nafkah Kerabat</h1><br/><br/>
+
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+فصل: في أحكام نفقة الأقارب وفي بعض نسخ المتن تأخير هذا الفصل عن الذي بعده. والنفقة مأخوذة من الإنفاق، وهو الإخراج ولا يستعمل إلا في الخير. وللنفقة أسباب ثلاثة القرابة وملك اليمين والزوجية. وذكر المصنف السبب الأول في قوله (ونفقة العمودين من الأهل واجبة للوالدين والمولودين) أي ذكوراً كانوا أو إناثاً اتفقوا في الدين أو اختلفوا فيه واجبة على أولادهم (فأما الوالدون) وإن علوا (فتجب نفقتهم بشرطين الفقر) لهم وهو عدم قدرتهم على مال أو كسب (والزمانة أو الفقر والجنون) والزمانة هي مصدر زمن الرجل، زمانة إذا حصل له آفة، فإن قدروا على مال أو كسب لم تجب نفقتهم (وأما المولودون) وإن سفلوا
+<br/><br/>
+فتجب نفقتهم- على الموالدين (بثلاثة شرائط) أحدها (الفقر والصغر) فالغني الكبير لا تجب نفقته (أو الفقر والزمانة) فالغني القوي لا تجب نفقته (أو الفقر والجنون) فالغني العاقل لا تجب نفقته وذكر المصنف السبب الثاني في قوله (ونفقة الرقيق والبهائم واجبة) فمن ملك رقيقاً عبداً أو أمة أو مدبراً أو أم ولد أو بهيمة، وجب عليه نفقته، فيطعم رقيقه من غالب قوت أهل البلد ومن غالب أدمهم يقدر الكفاية، ويكسوه من غالب كسوتهم، ولا يكفي في كسوة رقيقه ستر العورة فقط. (ولا يكلفون من العمل ما لا يطيقون) فإذا استعمل المالك رقيقه نهاراً أراحه ليلاً وعكسه ويريحه صيفاً وقت القيلولة، ولا يكلف دابته أيضاً ما لا تطيق حمله، وذكر المصنف السبب الثالث في قوله (ونفقة الزوجة الممكنة من نفسها واجبة) على الزوج ولما اختلفت نفقة الزوجة بحسب حال الزوج بين المصنف ذلك في قوله (وهي مقدرة فإن) وفي بعض النسخ إن (كان الزوج موسراً) ويعتبر يساره بطلوع فجر كل يوم (فمدان) من طعام واجبان عليه كل يوم مع ليلته المتأخرة عنه لزوجته مسلمة كانت أو ذمية حرة كانت أو رقيقه والمدان (من غالب قوتها) والمراد غالب قوت البلد من حنطة أو شعير أو غيرهما حتى الأقط في أهل بادية يقتاتونه
+<br/><br/>
+ويجب- للزوجة (من الأدم والكسوة ما جرت به العادة) في كل منهما فإن جرت عادة البلد في الأدم بزيت وشيرج وجبن ونحوها اتبعت العادة في ذلك، وإن لم يكن في البلد أدم غالب فيجب اللائق بحال الزوج، ويختلف الأدم باختلاف الفصول، فيجب في كل فصل ما جرت به عادة الناس فيه من الأدم، ويجب للزوجة أيضاً لحم يليق بحال زوجها، وإن جرت عادة البلد في الكسوة مثل الزوج بكتان أو حرير، وجب (وإن كان) الزوج (معسراً) ويعتبر إعساره بطلوع فجر كل يوم (فمد) أي فالواجب عليه لزوجته مد طعام (من غالب قوت البلد) كل يوم مع ليلته المتأخرة عنه (وما يأتدم به المعسرون مما جرت به عادتهم من الأدم (ويكسونه) مما جرت به عادتهم من الكسوة
+<br/><br/>
+وإن كان- الزوج (متوسطاً) ويعتبر توسطه بطلوع فجر كل يوم مع ليلته المتأخرة عنه (فمد) أي فالواجب عليه لزوجته مد (ونصف) من طعام من غالب قوت البلد (و) يجب لها (من الأدم) الوسط (و) من (الكسوة الوسط) وهو ما بين ما يجب على الموسر والمعسر، ويجب على الزوج تمليك زوجته الطعام حباً وعليه طحنه وخبزه، ويجب لها آلة أكل وشرب وطبخ، ويجب لها مسكن يليق بها عادة (وإن كانت ممن يخدم مثلها فعليه) أي الزوج (إخدامها) بحرة أو أمة له، أو أمة مستأجرة أو بالإنفاق على من صحب الزوجة من حرة، أو أمة لخدمة إن رضي الزوج بها (وإن أعسر بنفقتها) أي المستقبلة (فلها) الصبر على إعساره وتنفق على نفسها من مالها أو تقترض، ويصير ما أنفقته ديناً عليه، ولها (فسخ النكاح) وإذا فسخت حصلت المفارقة، وهي فرقة فسخ لا فرقة طلاق، وأما النفقة الماضية فلا فسخ للزوجة بسببها (وكذلك) للزوجة فسخ النكاح (إن أعسر) زوجها (بالصداق قبل الدخول) بها سواء علمت يساره قبل العقد أم لا.
+
+
+</font></div>
+
+<hr/><br/>
+
+
+
+
+
+<b><center>Hukum Menafkahi Kerabat.</b></center>
+
+<p>Di dalam sebagian redaksi matan fasal ini diakhirkan dari fasal setelahnya.</p>
+
+<p>Lafadz “an nafaqah” itu diambil dari lafadz “al infaq”, dan artinya adalah mengeluarkan. Lafadz “infaq” tidak digunakan kecuali di dalam kebaikan.</p><Br/>
+
+<b><center>Sebab-Sebab Nafkah</b></center>
+
+<p>Nafaqah memiliki tiga sebab, kerabat, milku yamin (kepemilkan budak), dan ikatan suami istri.</p>
+
+<p>Penulis Matan Taqrib menjelaskan sebab yang pertama di dalam perkataan beliau,</p><br/>
+
+<b><center>Nafkah Orang Tua dan Anak</b></center>
+
+<p>Nafaqah orang tua dan anak dari jalur keluarga wajib diberikan pada para anak dan orang tua.</p>
+
+<p>Maksudnya nafaqah orang tua yang laki-laki atau perempuan, satu agama atau berbeda agama wajib diberikan oleh anak-anaknya.</p>
+
+<p>Adapun para orang tua walaupun hingga ke atas, maka wajib diberi nafaqah dengan dua syarat.</p>
+
+<p>Mereka faqir, yaitu tidak memiliki harta atau tidak mampu bekerja dan lumpu, atau faqir dan gila.</p>
+
+<p>Az zamanah adalah bentuk kalimat masdar dari rangkaian “zamuna ar rajulu zamanatan (lelaki yang benar-benar lumpuh) ketika ia memiliki penyakit”.</p>
+
+<p>Sehingga, jika mereka memiliki harta atau mampu bekerja, maka tidak wajib diberi nafaqah.</p>
+
+<p>Adapun para anak walaupun hingga ke bawah, maka nafaqah mereka diwajibkan kepada para orang tua dengan tiga syarat :</p>
+
+<p>Salah satunya adalah fakir dan masih kecil. Sehingga anak yang kaya dan sudah besar, maka tidak wajib diberi nafaqah.</p>
+
+<p>Atau faqir dan lumpuh. Sehingga anak yang kaya dan kuat, maka tidak wajib diberi nafaqah.</p>
+
+<p>Atau faqir dan gila. Sehingga anak yang kaya dan mempunyai akal, maka tidak wajib diberi nafaqah.</p><br/>
+
+<b><center>Nafkah Budak dan Binatang Ternak</b></center>
+
+<p>Mushannif menyebutkan sebab yang kedua di dalam perkataan beliau, “memberi nafaqah kepada budak dan binatang ternak hukumnya wajib.”</p>
+
+<p>Sehingga, barang siapa memiliki budak, baik budak laki-laki, perempuan, mudabbar, ummu walad atau memiliki binatang ternak, maka wajib baginya untuk memberi nafaqah pada mereka.</p>
+
+<p>Sehingga wajib baginya memberi makan budaknya dengan makanan pokok penduduk setempat dan lauk pauk yang biasa mereka konsumsi dengan kadar kecukupan. Dan wajib memberi pakaian sesuai dengan pakaian penduduk daerah setempat.</p>
+
+<p>Di dalam memberi pakaian terhadap budak, tidak cukup memberi pakaian yang hanya menutupi aurat saja.</p>
+
+<p>Budak dan binatang ternak tidak boleh dipaksa melakukan pekerjaan yang tidak mampu mereka lakukan.</p>
+
+<p>Ketika majikan mempekerjakan budaknya di siang hari, maka wajib mengistirahatkan di malam hari. Dan ketika musim kemarau, wajib mengistirahatkan di waktu qailulah (tengah hari).</p>
+
+<p>Majikan juga tidak boleh memaksa binatang ternaknya memuat barang yang tidak mampu dimuat oleh binatang tersebut.</p><br/>
+
+<b><center>Nafkah Istri</b></center>
+
+<p>Mushannif menyebutkan sebab yang ketiga di dalam perkataan beliau,</p>
+
+<p>Nafaqah untuk seorang istri yang telah memasrahkan dirinya hukumnya wajib bagi seorang suami.</p>
+
+<p>Karena nafaqah untuk istri itu berbeda-beda sesuai dengan keadaan sang suami, maka mushannif menjelaskannya di dalam perkataan beliau,</p>
+
+<p>Nafaqah untuk istri itu dikira-kirakan. Sehingga, jika sang suami adalah orang kaya, kayanya sang suami dipertimbangkan saat terbitnya fajar setiap hari, maka wajib memberikan nafaqah bahan makanan sebanyak dua mud yang wajib ia berikan setiap hari hingga malam harinya kepada istrinya, baik beragama islam atau kafir dzimmi, merdeka ataupun budak.</p>
+
+<p>Dua mud tersebut diambilkan dari makanan pokok sang istri.</p>
+
+<p>Yang dikehendaki adalah makanan pokok daerah setempat, baik gandum putih, gandum merah, atau selainnya hingga susu kental bagi penduduk pedalaman yang menjadikannya sebagai makanan pokok.</p>
+
+<p>Dan wajib memberikan lauk pauk dan pakainya yang biasa terlaku kepada sang istri.</p>
+
+<p>Sehingga, jika daerah setempat biasa memakai lauk pauk dengan miyak zait, miyak wijen, mentega dan sesamanya, maka kebiasaan tersebut diikuti.</p>
+
+<p>Jika di daerah setempat tidak ada lauk pauk yang dominan, maka wajib memberikan lauk pauk yang layak dengan keadaan sang suami.</p>
+
+<p>Lauk pauk berbeda-beda dengan berbeda-bedanya musim.</p>
+
+<p>Sehingga di setiap musim wajib memberikan lauk pauk yang biasa dikonsumsi oleh masyarakat pasa saat itu.</p>
+
+<p>Istri juga wajib diberi daging yang sesuai dengan keadaan suaminya.</p>
+
+<p>Jika kebiasaan daerah setempat dalam urusan pakaian bagi orang sekelas sang suami adalah dengan bahan katun atau sutra, maka wajib untuk memberikan pakaian dengan bahan tersebut pada sang istri.</p>
+
+<p>Jika sang suami adalah orang miskin, ukuran miskinnya dipertimbangkan saat terbitnya fajar setiap harinya, maka wajib memberikan makanan satu mud.</p>
+
+<p>Maksudnya wajib bagi suami memberikan makanan satu mud dari makanan pokok yang dominan di daerah setempat kepada istrinya setiap hari hingga malam harinya.</p>
+
+<p>Dan memberikan lauk pauk yang biasa dikonsumsi oleh orang-orang miskin daerah setempat.</p>
+
+<p>Dan memberikan pakaian yang biasa digunakan oleh mereka.</p>
+
+<p>Jika sang suami adalah orang yang tengah-tengah, dan ukuran tengah-tengahnya ini dipertimbangkan saat terbitnya fajar setiap harinya hingga malam harinya, maka wajib satu mud setengah, maksudnya wajib bagi sang suami memberikan satu mud setengah dari bahan makanan pokok yang dominan daerah setempat.</p>
+
+<p>Dan wajib memberikan lauk pauk dan pakaian yang tengah-tengah pada sang istri.</p>
+
+<p>Yang dimaksud dengan tengah-tengah adalah sesuatu yang berada di antara sesuatu yang wajib bagi suami yang kaya dan yang wajib bagi suami yang miskin.</p>
+
+<p>Bagi sang suami wajib memberikan milik berupa bahan makanan biji-bijian kepada sang istri.</p>
+
+<p>Dan bagi sang suami wajib untuk menggiling dan membuat roti bahan makanan tersebut.</p>
+
+<p>Sang istri berhak diberi alat makan, minum dan memasak.</p>
+
+<p>Sang istri juga berhak mendapatkan tempat tinggal yang layak baginya secara adat.</p>
+
+<p>Jika sang istri termasuk orang-orang yang biasa dilayani, maka bagi suami wajib mencari pembantu untuk sang istri.</p>
+
+<p>Baik pembantu wanita merdeka, budak perempuannya, budak perempuan sewaan, atau dengan memberi nafkah kepada wanita yang menemani istrinya baik wanita merdeka atau budak karena untuk melayani sang istri, jika memang sang suami rela dengan wanita tersebut.</p>
+
+<b><center>Jika Suami Tidak Mampu Menafkahi</b></center>
+
+<p>Jika sang suami tidak mampu memberi nafkah sang istri, maksudnya nafkah di hari-hari yang akan datang, maka bagi sang istri diperkenankan bersabar atas ketidakmampuan sang suami dan menafkahi dirinya sendiri dari hartanya sendiri, atau dari hutang dan apa yang ia nafkahkan itu menjadi tanggungan hutang sang suami.</p>
+
+<p>Dan dia juga diperkenankan merusak nikah (fasakh).</p>
+
+<p>Ketika sang istri merusak nikah, maka terjadilah perceraian. Dan ini adalah perceraian sebab merusak nikah, bukan perceraian sebab talak.</p>
+
+<p>Sedangkan masalah nafkah hari-hari yang sudah lewat, maka tidak ada hak bagi sang istri untuk merusak nikah sebab sang suami tidak mampu memberikannya.</p>
+
+<p>Begitu juga bagi sang istri berhak merusak nikah jika suaminya tidak mampu memberikan mas kawin sebelum berhubungan intim.</p>
+
+<p>Baik sebelum akad sang istri sudah tahu bahwa sang suami tidak mampu memberikannya ataupun tidak.</p>
+
+
+
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="17.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 18</font>
+	</a>
+	
+	<a href="19.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

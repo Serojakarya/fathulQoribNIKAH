@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum Nikah</a></li>
+    <li><a href="2.html">2. Syarat Nikah</a></li>
+    <li><a href="3.html">3. Wanita Mahram yang Haram Dinikah</a></li>
+	<li><a href="4.html">4. Mas Kawin</a></li>
+	<li><a href="5.html">5. Menggilir Istri dan Nusuz</a></li>
+	<li><a href="6.html">6. Walimah atau Resepsi</a></li>
+	<li><a href="7.html">7. Hukum Khuluk</a></li>
+	<li><a href="8.html">8. Hukum Talak</a></li>
+	<li><a href="9.html">9. Talak Tanjiz dan Talak Ta'liq</a></li>
+	<li><a href="10.html">10. Hukum Rujuk</a></li>
+	<li><a href="11.html">11. Pasal Hukum Ila'</a></li>
+	<li><a href="12.html">12. Pasal Hukum Zhihar</a></li>
+	<li><a href="13.html">13. Pasal Hukum Qadzaf dan Li'an</a></li>
+	<li><a href="14.html">14. Pasal Hukum Iddah</a></li>
+	<li><a href="15.html">15. Pasal Jenis Wanita Iddah dan Hukumnya</a></li>
+	<li><a href="16.html">16. Istibrak (Iddah bagi Budak)</a></li>
+	<li><a href="17.html">17. Hukum Radha (Kerabat Sesusuan)</a></li>
+	<li><a href="18.html">18. Pasal Hukum Menafkahi Kerabat</a></li>
+	<li><a href="19.html">19. Pasal Hukum Hadonah (Pengasuhan Anak)</a></li>
+
+</ul>
+
+</div>
+<h1>Hukum Ila' <br/>(Sumpah Tidak Menjimak Istri)</h1><br/><br/>
+
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+فصل: في بيان أحكام الإيلاء وهو لغة مصدر آلى يؤلي إيلاء إذا حلف وشرعاً حلف زوج يصح طلاقه ليمتنع من وطء زوجته في قبلها مطلقاً، أو فوق أربعة أشهر، وهذا المعنى مأخوذ من قول المصنف
+<br/><br/>
+وإذا حلف أن لا يطأ زوجته- وطأً (مطلقاً أو مدة) أي وطأً مقيداً بمدة (تزيد على أربعة أشهر فهو) أي الحالف المذكور (مول) من زوجته سواء حلف بالله تعالى أو بصفة من صفاته أو علق وطء زوجته بطلاق، أو عتق كقوله: إن وطئتك فأنت طالق، أو فعبدي حر فإذا وطىء طلقت وعتق العبد، وكذا لو قال إن وطئتك فلله عليّ صلاة أو صوم أو حج أو عتق، فإنه يكون مولياً أيضاً
+<br/><br/>
+ويؤجل له- أي يمهل المولي حتماً حراً كان أو عبداً في زوجة مطيقة للوطء (إن سألت ذلك أربعة أشهر) وابتداؤها في الزوجة من الإيلاء وفي الرجعية من الرجعة (ثم) بعد انقضاء هذه المدة (يخير) المولي (بين الفيئة) بأن يولج المولي حشفته أو قدرها من مقطوعها بقبل المرأة
+<br/><br/>
+والتكفير- لليمين إن كان حلفه بالله تعالى على ترك وطئها (أو الطلاق) للمحلوف عليها (فإن امتنع) الزوج من الفيئة والطلاق (طلق عليه الحاكم) طلقة واحدة رجعية فإن طلق أكثر منها لم يقع، فإن امتنع من الفيئة فقط أمره الحاكم بالطلاق.
+
+
+
+
+</font></div>
+
+<hr/><br/>
+
+
+
+
+
+<b><center>Pengertian Ila’</b></center>
+
+
+<p>Ila’ secara bahasa adalah bentuk kalimat masdar dari fi’il “aala yuuli ila’an” ketika seseorang bersumpah.</p>
+
+<p>Dan secara syara’ adalah sumpah seorang suami yang sah menjatuhkan talak bahwa ia tidak akan mewathi (menjimak, menyetubuhi) istrinya pada bagian vaginanya dengan secara mutlak atau dalam masa lebih dari empat bulan.</p>
+
+<p>Makna ini diambil dari penjelasan mushannif -di bawah ini-,</p><br/>
+
+<b><center>Praktek ‘Ila’</b></center>
+
+<p>Ketika seorang suami bersumpah tidak akan mewathi istrinya secara mutlak atau dalam waktu tertentu, maksudnya tidak mewathi yang dibatasi dengan waktu lebih dari empat bulan, maka ia, maksudnya suami yang bersumpah tersebut adalah orang yang melakukan sumpah ila’ pada istrinya.</p>
+
+<p>Baik ia bersumpah dengan nama Allah Ta’ala atau dengan salah satu sifat-sifatNya.</p>
+
+<p>Atau ia menggantungkan wathi terhadap istrinya dengan talak atau memerdekakan budak. Seperti ucapan sang suami, “jika aku mewathimu, maka engkau tertalak, atau “maka budakku merdeka.”</p>
+
+<p>Sehingga ketika ia betul-betul mewathi, maka istrinya tertalak dan budaknya merdeka.</p>
+
+<p>Begitu pula seandainya sang suami berkata, “jika aku mewathimu, maka aku harus melakukan shalat, puasa, haji, atau memerdekakan budak karena Allah Swt.” Maka sesungguhnya dia juga melakukan sumpah ila’.</p><br/>
+
+<b><center>Konsekwensi Ila’</b></center>
+
+<p>Wajib memberi tenggang waktu terhadap lelaki yang melakukan sumpah ila’ selama empat bulan, baik lelaki tersebut berstatus merdeka atau budak, di dalam permasalahan istri yang mampu untuk diwathi jika memang sang istri meminta hal itu.<sup>1</sup></p>
+
+<p>Permulaan waktu tersebut dalam permasalahan wanita yang masih berstatus istri adalah sejak terjadinya sumpah ila’. Dan di dalam permasalahan wanita yang tertalak raj’i adalah sejak terjadinya ruju’.<sup>2</sup></p>
+
+<p>Kemudian, setelah masa tenggang itu habis, maka sang suami yang melakukan sumpah ila’ disuruh memilih di antara al fai’ah (kembali pada sang istri) dengan cara ia memasukkan hasyafahnya atau kira-kira ukuran hasyafah bagi suami yang terpotong hasyafahnya ke dalam vagina istrinya.</p>
+
+<p>Dan membayar kafarat yamin, jika sumpah akan meninggalkan wathi dengan nama Allah.</p>
+
+<p>Atau mentalak istri yang disumpah tidak akan diwathi.</p>
+
+<p>Kemudian, jika sang suami tidak mau melakukan fai’ah dan talak, maka hakim menjatuhkan satu talak raj’i atas nama sang suami.</p>
+
+<p>Sehingga, jika sang hakim menjatuhkan talak lebih dari satu, maka talak tersebut tidak jatuh.</p>
+
+<p>Jika sang suami hanya tidak mampu fai’ah, maka sang hakim memerintahkan dia agar menjatuhkan talak. </p>
+
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Permintaan istri ini bukanlah menjadi syarat dimulainya hitungan 4 bulan. Hal ini karena
+permulaan hitungan tidaklah tergantung pada permintaanya. Al-Baijuri, Darul Kutub AlIlmiyah,juz 2 hal. 291.</p>
+
+<p><sub>2</sub>Sehingga jika suami menalak dengan talak raj’i kemudian menyumpah ila’ terhadap istrinya
+maka hitungan belum dimulai sampai suami meruju’nya. Al-Baijuri, Darul Kutub Al-Ilmiyah,juz
+2 hal 292.</p>
+</phr>
+
+
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="10.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 11</font>
+	</a>
+	
+	<a href="12.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

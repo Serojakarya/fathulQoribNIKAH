@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum Nikah</a></li>
+    <li><a href="2.html">2. Syarat Nikah</a></li>
+    <li><a href="3.html">3. Wanita Mahram yang Haram Dinikah</a></li>
+	<li><a href="4.html">4. Mas Kawin</a></li>
+	<li><a href="5.html">5. Menggilir Istri dan Nusuz</a></li>
+	<li><a href="6.html">6. Walimah atau Resepsi</a></li>
+	<li><a href="7.html">7. Hukum Khuluk</a></li>
+	<li><a href="8.html">8. Hukum Talak</a></li>
+	<li><a href="9.html">9. Talak Tanjiz dan Talak Ta'liq</a></li>
+	<li><a href="10.html">10. Hukum Rujuk</a></li>
+	<li><a href="11.html">11. Pasal Hukum Ila'</a></li>
+	<li><a href="12.html">12. Pasal Hukum Zhihar</a></li>
+	<li><a href="13.html">13. Pasal Hukum Qadzaf dan Li'an</a></li>
+	<li><a href="14.html">14. Pasal Hukum Iddah</a></li>
+	<li><a href="15.html">15. Pasal Jenis Wanita Iddah dan Hukumnya</a></li>
+	<li><a href="16.html">16. Istibrak (Iddah bagi Budak)</a></li>
+	<li><a href="17.html">17. Hukum Radha (Kerabat Sesusuan)</a></li>
+	<li><a href="18.html">18. Pasal Hukum Menafkahi Kerabat</a></li>
+	<li><a href="19.html">19. Pasal Hukum Hadonah (Pengasuhan Anak)</a></li>
+
+</ul>
+
+</div>
+<h1>Bab Talak Tanjiz <br/>dan Talak Ta'liq
+</h1><br/><br/>
+
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+فصل: في حكم طلاق الحر والعبد وغير ذلك (ويملك) الزوج (الحر) على زوجته ولو كانت أمة (ثلاث تطليقات و) يملك (العبد) عليها (تطليقتين) فقط حرة كانت الزوجة أو أمة والمبعض والمكاتب والمدبر كالعبد القن
+<br/><br/>
+ويصح الاستثناء في الطلاق إذا وصله به- أي وصل الزوج لفظ المستثنى بالمستثنى منه اتصالاً عرفياً بأن يعدا في العرف كلاماً واحداً، ويشترط أيضاً أن ينوي الاستثناء قبل فراغ اليمين، ولا يكفي التلفظ به من غير نية الاستثناء، ويشترط أيضاً عدم استغراق المستثنى المستثنى منه، فإن استغرقه كأنت طالق ثلاثاً إلا ثلاثاً بطل الاستثناء
+<br/><br/>
+ويصح تعليقه- أي الطلاق (بالصفة والشرط) كإن دخلت الدار فأنت طالق، فتطلق إذا دخلت
+<br/><br/>
+و- الطلاق لا يقع إلا على زوجة وحينئذ (لا يقع الطلاق قبل النكاح) فلا يصح طلاق الأجنبية تنجيزاً كقوله لها طلقتك، ولا تعليقاً كقوله لها: إن تزوجتك فأنت طالق أو إن تزوجت فلانة فهي طالق (وأربع لا يقع طلاقهم الصبي والمجنون) وفي معناه المغمى عليه
+<br/><br/>
+والنائم والمكره- أي بغير حق فإن كان بحق وقع وصورته كما قال جمع إكراه القاضي للمولي بعد مدة الإيلاء على الطلاق، وشرط الإكراه قدرة المكره بكسر الراء على تحقيق ما هدد به المكره بفتحها بولاية، وتغلب وعجز المكره بفتح الراء عن دفع المكره بكسرها بهرب منه، أو استغاثة بمن يخلصه ونحو ذلك، وظنه أنه إن امتنع مما أكره عليه فعل ما خوفه به، ويحصل الإكراه بالتخويف بضرب شديد أو حبس أو إتلاف مال ونحو ذلك، وإذا ظهر من المكره بفتح الراء قرينة اختيار بأن أكرهه شخص على طلاق ثلاث، فطلق واحدة وقع الطلاق،
+<br/><br/>
+وإذا صدر تعليق الطلاق بصفة من مكلف، ووجدت تلك الصفة في غير تكليف، فإن الطلاق المعلق بها يقع بها، والسكران ينفذ طلاقه كما سبق.
+
+</font></div>
+
+<hr/><br/>
+
+
+
+
+
+<b><center>Hak Talak Suami</b></center>
+
+
+<p>(Fasal) menjelaskan hak talak suami yang merdeka, suami yang berupa budak dan permasalahan-permasalahan yang lain.</p>
+
+<p>Suami yang merdeka memiliki hak talak tiga kali atas istrinya walaupun istrinya berstatus budak.</p>
+
+<p>Dan suami yang berstatus budak hanya memiliki hak talak dua kali atas istrinya, baik istrinya berstatus merdeka ataupun budak.</p>
+
+<p>Budak muba’adl, mukatab, dan budak mudabbar itu sama dengan budak yang murni.</p><br/>
+
+<b><center>Istisna’ (Mengecualikan) dalam Talak</b></center>
+
+<p>Istisna’ dalam talak hukumnya sah ketika istisna’ bersambung dengan talak yang diucapkan.</p>
+
+<p>Maksudnya sang suami menyambung lafadz “mustasna (yang dikecualikan)” dengan lafadz “mustasna minhu (yang diambil pengecualiannya)” dengan bentuk penyambungan secara ‘urf, dengan arti kedua lafadz tersebut dianggap satu perkataan secara ‘urf.</p>
+
+<p>Juga disyaratkan suami harus niat mengecualikan sebelum selesai mengucapkan kalimat talak.</p>
+
+<p>Dan tidak cukup mengucapkan pengecualian tanpa disertai niat untuk mengecualikan.</p>
+
+<p>Dan juga disyaratkan yang dikecualikan (mustasna) tidak menghabiskan jumlah yang diambil pengecualiannya (mustasna minhu).</p>
+
+<p>Sehingga, jika menghabiskan seperti ucapan “engkau tertalak tiga kecuali tiga”, maka pengecualian tersebut batal.</p><br/>
+
+<b><center>Ta’liq (Penggantungan) Talak / Talak Kondisional</b></center>
+
+<p>Sah menta’liq talak dengan sifat dan syarat. Seperti kata-kata “jika engkau masuk rumah, maka engkau tertalak”, maka sang istri menjadi tertalak ketika masuk rumah.</p>
+
+<p>Talak tidak bisa jatuh kecuali terhadap istri.</p>
+
+<p>Kalau demikian, maka talak tidak bisa jatuh -terhadap seorang wanita- sebelum menikah.</p>
+
+<p>Sehingga tidak sah mentalak wanita lain -bukan istri- dengan bentuk talak secara langsug seperti ucapan seorang laki-laki pada wanita tersebut, “aku mentalakmu.”</p>
+
+<p>Dan juga tidak dengan bentuk talak yang digantungkan seperti ucapan seorang laki-laki pada wanita yang bukan istrinya, “jika aku menikah denganmu, maka engkau tertalak”, atau “jika aku menikah dengan fulanah, maka ia tertalak.”</p><br/>
+
+<b><center>Orang-Orang Yang Tidak Sah Menjatuhkan Talak</b></center>
+
+<p>Ada empat orang yang tidak bisa menjatuhkan talak, yaitu anak kecil, orang gila, yang semakna dengan orang gila adalah orang epilepsi.</p>
+
+<p>Orang yang tidur dan orang yang dipaksa menjatuhkan talak, maksudnya dengan tanpa alasan yang benar.</p>
+
+<p>Sehingga, jika pemaksaan tersebut di dasari dengan alasan yang benar, maka jatuh talak.</p>
+
+<p>Bentuk pemaksaan dengan alasan yang benar seperti penjelasan sekelompok ulama’, adalah pemaksaan talak yang dilakukan oleh seorang qadli terhadap suami yang melakukan sumpah ila’ setelah melewati masa ila’.</p></br/>
+
+<b><center>Syarat-Syarat Pemaksaan</b></center>
+
+<p>Syarat ikrah / paksaan adalah kemampuan al mukrih (orang yang memaksa), dengan terbaca kasrah huruf ra’nya, untuk membuktikan ancamannya terhadap al mukrah (orang yang dipaksa), dengan terbaca fathah huruf ra’nya, baik dengan mengandalkan kekuasaan atau kekuatan.</p>
+
+<p>Lemahnya al mukrah (orang yang dipaksa), dengan terbaca fathah huruf ra’nya, untuk melawan / menghentikan al mukrih (orang yang memaksa), dengan terbaca kasrah huruf ra’nya, baik dengan lari darinya, meminta tolong pada orang yang bisa menyelamatkannya, atau cara-cara sesamanya.</p>
+
+<p>Dan al mukrah (orang yang dipaksa) mempunyai dugaan bahwa sesungguhnya jika ia tidak mau melakukan apa yang dipaksakan padanya, maka al mukrih (orang yang memaksa) akan membuktikan ancamannya.</p>
+
+<p>Pemaksaan bisa hasil dengan ancaman pukulan keras, penjara, merusakkan harta atau sesamanya.</p>
+
+<p>Ketika dari al mukrah (orang yang dipaksa) nampak ada qarinah (petunjuk) bahwa ia melakukan dengan keinginan sendiri, dengan contoh semisal seseorang dipaksa menjatuhkan talak tiga namun kemudian dia menjatuhkan talak satu, maka talak yang ia lakukan sah / jatuh.</p>
+
+<p>Ketika ada orang mukallaf menggantungkan talak dengan sifat dan sifat tersebut baru wujud ketika orang tersebut tidak dalam keadaan mukallaf, maka sesungguhnya talak yang dita’liq dengan sifat tersebut menjadi jatuh.</p>
+
+<p>Orang yang sedang mabuk ketika menjatuhkan talak, maka talaknya sah seperti penjelasan di depan.</p>
+
+
+
+
+
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="8.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 9</font>
+	</a>
+	
+	<a href="10.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>
